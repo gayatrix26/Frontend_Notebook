@@ -2,6 +2,19 @@
 
 /* Light Theme */
 
+body {
+  /* Override global background image */
+  background-image: none;
+  background-color: var(--page-color);
+}
+
+/* Apply image ONLY when home page is active */
+body:has(.home-container) {
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 :root {
   --title-accent: #a37524; /* brown for light mode */
 }
@@ -14,9 +27,9 @@ body.dark-theme {
 
   --background-image: url('/assets/Home_day.png');
 
-  --page-color: #f8f3dd;
+  --page-color: #fcdc84;
 
-  --surface-color: rgba(255, 255, 255, 0.8);
+  --surface-color: rgba(251, 180, 58, 0.941);
 
   --text-color: #000000;
 
@@ -32,13 +45,13 @@ body.dark-theme {
 
   --background-image: url('/assets/Home_night.png');
 
-  --page-color: #1e293b;
+  --page-color: #111827;
 
-  --surface-color: rgba(15, 23, 42, 0.8);
+  --surface-color: rgba(20, 33, 63, 0.8);
 
   --text-color: #ffffff;
 
-  --button-color: #1e3a8a;
+  --button-color: #0f1471;
 
   --border-color: rgba(255, 255, 255, 0.1);
 }
@@ -60,7 +73,6 @@ body {
 body {
   min-height: 100vh;
 
-  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
