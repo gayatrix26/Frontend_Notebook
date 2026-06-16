@@ -1,1 +1,108 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Light Theme */
+
+:root {
+  --title-accent: #a37524; /* brown for light mode */
+}
+
+body.dark-theme {
+  --title-accent: #b7c6d0; /* white for dark mode */
+}
+
+:root {
+
+  --background-image: url('/assets/Home_day.png');
+
+  --page-color: #f8f3dd;
+
+  --surface-color: rgba(255, 255, 255, 0.8);
+
+  --text-color: #000000;
+
+  --button-color: #d4a017;
+
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dark Theme */
+
+.dark-theme {
+
+  --background-image: url('/assets/Home_night.png');
+
+  --page-color: #1e293b;
+
+  --surface-color: rgba(15, 23, 42, 0.8);
+
+  --text-color: #ffffff;
+
+  --button-color: #1e3a8a;
+
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--text-color);
+}
+
+:root {
+
+  --glass-bg: rgba(255, 255, 255, 0.025);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+}
+
+.dark-theme {
+
+  --glass-bg: rgba(255, 255, 255, 0.02);
+  --glass-border: rgba(255, 255, 255, 0.05);
+
+}
+
+:root {
+  /* LIGHT MODE → soft brown */
+  --notebook-filter: sepia(0.4) brightness(0.6) saturate(4);
+}
+body.dark-theme {
+  /* DARK MODE → white */
+  --notebook-filter: sepia(0.2) brightness(0.8) saturate(1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevents horizontal mess */
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
